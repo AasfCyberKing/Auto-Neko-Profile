@@ -1,0 +1,26 @@
+{
+      "name" : "Neko Auto Pfp",
+      "description" : "Simple Pyrogram Script Use Nekos.best To Change Bot's Pfp every 24hrs",
+      "repository" : "https://github.com/Team-Aasf/Nekos-Best-Bot",
+      "logo" : "https://nekos.best/api/v2/neko/0134.png",
+      "keywords" : ["autopfp", "pyrogram"],
+      "env" : {
+         "API_ID" : {
+            "description" : "Get from http://my.telegram.org",
+            "required" : true
+           },
+         "API_HASH" : {
+            "description" : "Get from http://my.telegram.org",
+            "required" : true
+           },
+         "SESSION" : {
+            "description" : "Your Pyrogram String Session",
+            "required" : true
+           },
+         "USERNAME" : {
+            "description" : "Your Bot's Username Without @",
+            "required" : true
+           }
+     }
+ }
+    
