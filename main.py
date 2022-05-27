@@ -1,6 +1,7 @@
 import os
 import logging
-from pyrogram import Client
+from pyrogram import Client, idle
+from asyncio import get_event_loop
 import requests
 import time
 
@@ -27,9 +28,8 @@ ubot = Client(
       api_hash=API_HASH,
 )
 
-ubot.run()
-
-while True:
+async def main():
+    await ubot.start()
     url = "https://nekos.best/api/v2/neko"
     r = requests.get(url)
     e = r.json()
@@ -46,4 +46,7 @@ while True:
     times.sleep(5)
     ubot.send_photo("@botfather", pics)
     times.sleep(90000)
-    
+    await idle()
+
+loop = get_event_loop()
+loop.run_until_complete(main())
