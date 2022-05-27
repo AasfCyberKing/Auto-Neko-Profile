@@ -22,8 +22,6 @@ SESSION = ""
 USERNAME = ""
 """
 
-TMP_DOWNLOAD_DIRECTORY = "./"
-
 ubot = Client(
       session_name=SESSION,
       api_id=API_ID,
@@ -36,20 +34,47 @@ async def main():
     r = requests.get(url)
     e = r.json()
     pics = e["results"][0]["url"]
-    catto = await ubot.download_media(pics, TMP_DOWNLOAD_DIRECTORY)
     await ubot.send_message("@botfather", "/setuserpic")
     time.sleep(5)
     await ubot.send_message("@botfather", f"@{USERNAME}")
     time.sleep(5)
-    await ubot.send_photo("@botfather", catto)
-    os.remove(catto)
+    await ubot.send_photo("@botfather", "pics/0001.png")
     time.sleep(90000)
     await ubot.send_message("@botfather", "/setuserpic")
     time.sleep(5)
     await ubot.send_message("@botfather", f"@{USERNAME}")
     time.sleep(5)
-    await ubot.send_photo("@botfather", catto)
-    os.remove(catto)
+    await ubot.send_photo("@botfather", "pics/0002.png")
+    time.sleep(90000)
+    await ubot.send_message("@botfather", "/setuserpic")
+    time.sleep(5)
+    await ubot.send_message("@botfather", f"@{USERNAME}")
+    time.sleep(5)
+    await ubot.send_photo("@botfather", "pics/0003.png")
+    time.sleep(90000)
+    await ubot.send_message("@botfather", "/setuserpic")
+    time.sleep(5)
+    await ubot.send_message("@botfather", f"@{USERNAME}")
+    time.sleep(5)
+    await ubot.send_photo("@botfather", "pics/0004.png")
+    time.sleep(90000)
+    await ubot.send_message("@botfather", "/setuserpic")
+    time.sleep(5)
+    await ubot.send_message("@botfather", f"@{USERNAME}")
+    time.sleep(5)
+    await ubot.send_photo("@botfather", "pics/0005.png")
+    time.sleep(90000)
+    await ubot.send_message("@botfather", "/setuserpic")
+    time.sleep(5)
+    await ubot.send_message("@botfather", f"@{USERNAME}")
+    time.sleep(5)
+    await ubot.send_photo("@botfather", "pics/0006.png")
+    time.sleep(90000)
+    await ubot.send_message("@botfather", "/setuserpic")
+    time.sleep(5)
+    await ubot.send_message("@botfather", f"@{USERNAME}")
+    time.sleep(5)
+    await ubot.send_photo("@botfather", "pics/0007.png")
     time.sleep(90000)
     await idle()
 
