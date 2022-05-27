@@ -29,6 +29,8 @@ ubot = Client(
       api_hash=API_HASH,
 )
 
+ubot.run()
+
 while True:
     url = "https://nekos.best/api/v2/neko"
     r = requests.get(url)
