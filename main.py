@@ -24,7 +24,7 @@ USERNAME = ""
 """
 
 ubot = Client(
-      session_name=SESSION,
+      name=SESSION,
       api_id=API_ID,
       api_hash=API_HASH,
 )
