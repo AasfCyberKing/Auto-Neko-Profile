@@ -1,3 +1,4 @@
 pyrogram == 1.4.15
 tgcrypto
 requests
+asyncio
