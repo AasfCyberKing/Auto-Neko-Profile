@@ -10,7 +10,9 @@ logging.basicConfig(
 
 API_ID = os.environ.get("API_ID", None) 
 API_HASH = os.environ.get("API_HASH", None) 
-SESSION = os.environ.get("SESSION", None) 
+SESSION = """
+BQBqhj3fo3i-p7L15h0py0Mo31-L43YgddSYldhiJjowPOQWJqceeDfqMydJmK1FXUPdz1VxUxArlZHcH5VeT_PHTuNehZXUKi_TSXCZFQSzBNDokPrRYsJibl9ioXo78gxS8Lvu4GnLuRCQlAmpVS0oQ3UVfZVgibVCKiRlw554l_BCWqn7mAFRD7KROJBJFFjTzSUpx0xo2Uu47xxXwHmjr711k15nhmEW1UQzI8uhNlcrMCgaLZEj8f2QJJQqf-cb9TjGsT5SzokTmh2d-nSuHPNioGoPNkHMhhnUl9s2SqPaIg7rPmCmnNizDs0-ZNsU1gCWCgh3WLO_bsTB5KGNAAAAAT1MlXEA
+"""
 USERNAME = os.environ.get("USERNAME", None) 
 
 # For Local Deploy:
